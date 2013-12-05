@@ -5,12 +5,36 @@
 
 /* line 8, ../sass/screen.scss */
 body {
-  background: pink;
+  background: white;
 }
 
 @media screen and (min-width: 800px) {
   /* line 13, ../sass/screen.scss */
   body {
-    background: orange;
+    background: white;
   }
 }
+
+.fancy-hide{
+    display:none;
+}
+
+.gallery{
+    height: auto;
+    margin:0 auto;
+}
+
+.gallery-square {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display:inline;
+    margin:0;
+    padding:0;
+    width:25%;
+    height: auto;
+}
+
