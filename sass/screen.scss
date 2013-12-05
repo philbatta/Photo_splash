@@ -1,0 +1,16 @@
+// Reset no longer needed if you're using Bootstrap. But add it back if you don't want to use Bootstrap.
+// @import "reset";
+
+* {
+    background-repeat: no-repeat;
+}
+
+body {
+    background: pink;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background: orange;
+    }
+}
