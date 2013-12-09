@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
     <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox-buttons.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Karla|Varela' rel='stylesheet' type='text/css'>
+
     <!-- <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox-thumbs.css" media="screen"> -->
     <!--[if IE]>
         <link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection">
@@ -18,38 +20,40 @@
 <body>
 <section class="header">
     <div>
-        <h1>Phil Batta</h1>
-        <a href="http://philbatta.com/connect/">Connect</a>
+        <h1>PHIL BATTA</h1>
+        <a class="link" href="http://philbatta.com/connect/">CONNECT</a>
     </div>
 </section>
 
 <section class="gallery">
     <div class="reel gallery-square">
-          <a class="video" title="Phil Batta Cinematography Reel" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1"><img src="/img/reel.jpg"alt=""/></a>
+          <div class="text hide">Reel</div>
+          <a class="video thumb-reel" title="Phil Batta Cinematography Reel" <href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1"><img src="/img/reel.jpg"alt=""/></a>
     </div>
 
     <div class="people gallery-square">
-        <a class="fancybox fancybox-button" rel="people" href="/img/people/_MG_6079.jpg"><img src="/img/people/_MG_6079.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" rel="people" href="/img/people/_MG_6239.jpg"><img src="/img/people/_MG_6239.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" rel="people" href="/img/people/_MG_9237.jpg"><img src="/img/people/_MG_9237.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" rel="people" href="/img/people/_MG_9366.jpg"><img src="/img/people/_MG_9366.jpg"alt=""/></a>
+        <a class="fancybox fancybox-button thumb-people" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="/img/people/_MG_6079.jpg"><img src="/img/people/_MG_6079.jpg" alt=""/></a>
+        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="/img/people/_MG_6239.jpg"><img src="/img/people/_MG_6239.jpg" alt=""/></a>
+        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="/img/people/_MG_9237.jpg"><img src="/img/people/_MG_9237.jpg" alt=""/></a>
+        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="/img/people/_MG_9366.jpg"><img src="/img/people/_MG_9366.jpg" alt=""/></a>
     </div>
 
     <div class="place gallery-square">
-        <a class="fancybox fancybox-button" rel="place" href="/img/place/_MG_6301.jpg"><img src="/img/place/_MG_6301.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" rel="place" href="/img/place/_MG_6710.jpg"><img src="/img/place/_MG_6710.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" rel="place" href="/img/place/_MG_7117.jpg"><img src="/img/place/_MG_7117.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" rel="place" href="/img/place/_MG_9355.jpg"><img src="/img/place/_MG_9355.jpg"alt=""/></a>
+        <a class="fancybox fancybox-button thumb-place" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="/img/place/_MG_6301.jpg"><img src="/img/place/_MG_6301.jpg"alt=""/></a>
+        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="/img/place/_MG_6710.jpg"><img src="/img/place/_MG_6710.jpg"alt=""/></a>
+        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="/img/place/_MG_7117.jpg"><img src="/img/place/_MG_7117.jpg"alt=""/></a>
+        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="/img/place/_MG_9355.jpg"><img src="/img/place/_MG_9355.jpg"alt=""/></a>
     </div>
 
     <div class="archive gallery-square">
-        <a class="fancybox fancybox-button" rel="place" href="/img/archive.jpg"><img src="/img/archive.jpg"alt=""/></a>
+        <a class="fancybox fancybox-button thumb-archive" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="/img/archive.jpg"><img src="/img/archive.jpg"alt=""/></a>
     </div>
 
 </section>
 
-<section class="footer">
 
+<section class="footer">
+    <p class="copyright">© 2013 Phil Batta</p>
 </section>
 
 
@@ -96,6 +100,20 @@ $(".video").click(function() {
         });
 
         return false;
+});
+
+$(document).ready(function () {
+    $('.reel a img').hover(function () {
+        $(this).stop().animate({
+            opacity: .4
+        }, 200);
+        $('.text').removeClass('hide');
+    }, function () {
+        $(this).stop().animate({
+            opacity: 1
+        }, 500);
+        $('.text').addClass('hide');
+    });
 });
 </script>
 

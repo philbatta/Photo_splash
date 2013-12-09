@@ -19,24 +19,90 @@ body {
     display:none;
 }
 
-.gallery{
-    height: auto;
-    margin:0 auto;
+.header {
+    height: 75px;
+    padding: 15px 0px 0px 15px;
 }
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+}
+
+.link {
+    font-family: 'Quicksand', sans-serif;
+    size: 1em;
+    display: inline;
+    margin-left: 40px;
+}
+
 
 .gallery-square {
-    float:left;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    font-size: 0;
+    width: 24.5%;
+    height: 200px;
+    overflow: hidden;
+}
+
+
+img {
     margin:0;
     padding:0;
 }
 
-img{
-    margin:0;
-    padding:0;
-    width:25%;
-    height: auto;
+.thumb-people {
+    position: relative;
+    left: -350px;
+    top: -230px;
 }
 
-a{
+.thumb-reel {
+    position: relative;
+    left: -300px;
+    top: -550px;
+}
+
+.thumb-place {
+    position: relative;
+    left: -550px;
+    top: -80px;
+}
+
+.thumb-archive {
+    position: relative;
+    left: -100px;
+    top: -300px;
+}
+
+.reel {
+    position: relative;
+}
+
+.text {
+    font-weight: bold;
+    color: black;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+/*.hide {
+    display: none;
+}*/
+
+.footer{
+    background-color: #bababc;
+    height: 50px;
 
 }
+
+.copyright {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+
