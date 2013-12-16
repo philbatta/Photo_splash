@@ -66,16 +66,15 @@ a:hover{
     margin:0;
     padding:0;
     width: 33%;
-    height: 700px;
+    height: 900px;
     overflow: hidden;
 }
-
-
 
 img {
     margin:0;
     padding:0;
-    width:100%;
+    width: 100%;
+    height: auto;
 }
 
 .thumb-people {
@@ -112,13 +111,17 @@ div span{
     letter-spacing: 3.3px;
     text-transform: uppercase;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: -10px;
     width: 100%;
-    height: auto;
+    height: 100%;
     /*background-color: rgba(242,101,34,0.5);*/
     border-radius: 0 3px 3px 0;
     z-index: 100;
+}
+span{
+    width: auto;
+    height: 100%;
 }
 
 .text {
