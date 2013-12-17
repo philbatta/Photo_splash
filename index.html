@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="bootstrap.full.min.css"> -->
+  <!--   <link rel="stylesheet" type="text/css" href="bootstrap.full.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/screen.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen">
@@ -18,41 +18,44 @@
     <![endif]-->
 </head>
 <body>
-<section class="header">
-    <div>
-        <h1>PHIL BATTA</h1>
-        <h2>Photographer Filmmaker</h2>
-        <a class="link" href="http://philbatta.com/connect/">CONNECT</a>
-        <a class="link" href="http://philbatta.com">MORE WORK</a>
-    </div>
-</section>
 
-
-
-<section class="gallery">
-
-    <div class="gallery-square">
-        <span class="portfolio-section"><p>Reel</p></span>
-          <a id="vimeo_test1" href="javascript:;"><img src="img/reel.jpg"alt=""/></a>
+    <div class="row lil-padding">
+        <div class="col-xs-12">
+            <h1>PHIL BATTA</h1>
+        </div>
+        <div class="col-xs-9">
+            <h2>Photographer Filmmaker</h2>
+        </div>
+        <div class="col-xs-3">
+            <a class="link-style" href="http://philbatta.com/connect/">CONNECT</a>
+            <a class="link-style" href="http://philbatta.com">ARCHIVE</a>
+        </div>
     </div>
 
-    <div class="people gallery-square">
-        <span class="portfolio-section"><p>People</p></span>
-        <a class="fancybox fancybox-button" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="img/people/people_feat.jpg"><img src="img/people/people_feat.jpg" alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="img/people/_MG_6239.jpg"><img src="img/people/_MG_6239.jpg" alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="img/people/_MG_9237.jpg"><img src="img/people/_MG_9237.jpg" alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="people" href="img/people/_MG_9366.jpg"><img src="img/people/_MG_9366.jpg" alt=""/></a>
-    </div>
 
-    <div class="place gallery-square">
-        <span class="portfolio-section"><p>Places</p></span>
-        <a class="fancybox fancybox-button" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="img/place/place_feat.jpg"><img src="img/place/place_feat.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="img/place/_MG_6710.jpg"><img src="img/place/_MG_6710.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="img/place/_MG_7117.jpg"><img src="img/place/_MG_7117.jpg"alt=""/></a>
-        <a class="fancybox fancybox-button fancy-hide" title="Lorem ipsum dolor sit amet, consectetur adipiscing." rel="place" href="img/place/_MG_9355.jpg"><img src="img/place/_MG_9355.jpg"alt=""/></a>
-    </div>
+<div class="row">
+        <div class="col-md-4 col-sm-12 hug">
+            <span class="portfolio-section"><p>Reel</p></span>
+              <a id="vimeo_test1" href="javascript:;"><img src="img/reel.jpg"alt=""/></a>
+        </div>
 
-</section>
+        <div class="col-md-4 col-sm-12 hug">
+            <span class="portfolio-section"><p>People</p></span>
+            <a class="fancybox fancybox-button" rel="people" href="img/people/people_feat.jpg"><img src="img/people/people_feat.jpg" alt=""/></a>
+            <a class="fancybox fancybox-button fancy-hide" rel="people" href="img/people/_MG_6239.jpg"><img src="img/people/_MG_6239.jpg" alt=""/></a>
+            <a class="fancybox fancybox-button fancy-hide" rel="people" href="img/people/_MG_9237.jpg"><img src="img/people/_MG_9237.jpg" alt=""/></a>
+            <a class="fancybox fancybox-button fancy-hide" rel="people" href="img/people/_MG_9366.jpg"><img src="img/people/_MG_9366.jpg" alt=""/></a>
+        </div>
+
+        <div class="col-md-4 col-sm-12 hug">
+            <span class="portfolio-section"><p>Places</p></span>
+            <a class="fancybox fancybox-button" rel="place" href="img/place/place_feat.jpg"><img src="img/place/place_feat.jpg"alt=""/></a>
+            <a class="fancybox fancybox-button fancy-hide" rel="place" href="img/place/_MG_6710.jpg"><img src="img/place/_MG_6710.jpg"alt=""/></a>
+            <a class="fancybox fancybox-button fancy-hide" rel="place" href="img/place/_MG_7117.jpg"><img src="img/place/_MG_7117.jpg"alt=""/></a>
+            <a class="fancybox fancybox-button fancy-hide" rel="place" href="img/place/_MG_9355.jpg"><img src="img/place/_MG_9355.jpg"alt=""/></a>
+        </div>
+</div>
+
 
 
 <!-- <section class="footer">
@@ -116,7 +119,7 @@ $(document).ready(function () {
         openEffect  : 'none',
         closeEffect : 'none'
     });
-}); 
+});
 </script>
 
 <script type="text/javascript">
